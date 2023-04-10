@@ -1,48 +1,105 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  h1 {
-    color: #00a0d6;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    background-color: #00a0d6;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #withdraw-btn {
-    margin-top: 20px;
-  }
-  
-  #connect-btn {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: hsl(216, 82%, 50%);
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.content {
+  display: flex;
+}
+
+.filters {
+  flex: 1;
+  margin-right: 2rem;
+}
+.filter-section {
+  margin-bottom: 1rem;
+}
+
+.nft-gallery {
+  flex: 2;
+  text-align: center;
+}
+
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 2rem 0;
+}
+
+.nft-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.nft-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: hsl(216, 82%, 50%);
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+}
